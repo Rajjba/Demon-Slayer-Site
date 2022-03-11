@@ -172,10 +172,19 @@ img {
   background-image: none;
 }
 
+.buttonback2 {
+  text-decoration: none;
+  color: black;
+  font-family: 'Courier New', monospace;
+  display:flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 1000;
+}
+
 .headers {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
   background-image: none;
 }
 
@@ -200,6 +209,8 @@ img {
   background-blend-mode:luminosity;
   background-size: 150%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .season2 {
@@ -210,4 +221,12 @@ img {
   background-color: white;
   background-blend-mode:luminosity;
   text-align: center;
+}
+
+.episodes {
+  display: grid;
+  grid-template-rows: auto;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  font-size: x-large;
 }
