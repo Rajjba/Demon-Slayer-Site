@@ -175,11 +175,17 @@ img {
 .buttonback2 {
   text-decoration: none;
   color: black;
-  font-family: 'Courier New', monospace;
-  display:flex;
+  font-family: "Courier New", monospace;
+  display: flex;
   justify-content: center;
   font-size: xx-large;
   font-weight: 1000;
+  background-color: #0000e0;
+  transition: all 500ms;
+}
+
+.buttonback2:hover {
+  background-color: #610000;
 }
 
 .headers {
@@ -189,11 +195,11 @@ img {
 }
 
 .header1 {
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .header2 {
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .forms {
@@ -204,13 +210,19 @@ img {
 
 .season1 {
   border: #0000e0 solid 5px;
-  background-image: url(http://wallpapers.filehostia.com/wp-content/uploads/2021/02/njvbywl8dug61.jpg);
+  background-image: url(tanjiro\ water\ breathing.jpg);
+  background-blend-mode: luminosity;
   background-color: white;
-  background-blend-mode:luminosity;
   background-size: 150%;
   text-align: center;
   display: flex;
   justify-content: center;
+  transition: all 500ms;
+}
+
+.season1:hover {
+  border: 10px solid #0000e0;
+  background-blend-mode: normal;
 }
 
 .season2 {
@@ -219,14 +231,30 @@ img {
   background-size: 100%;
   background-position: 10% 50%;
   background-color: white;
-  background-blend-mode:luminosity;
+  background-blend-mode: luminosity;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all 500ms;
+}
+
+.season2:hover {
+  border: 10px solid #610000;
+  background-blend-mode: normal;
 }
 
 .episodes {
   display: grid;
   grid-template-rows: auto;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-weight: 600;
   font-size: x-large;
+  backdrop-filter: blur(3px);
+  transition: all 500ms;
+  color: white;
+  text-shadow: 1px 1px 1px #050000;
+}
+
+.episodes:hover {
+  font-size: xx-large;
 }

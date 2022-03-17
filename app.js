@@ -1,20 +1,18 @@
-let form = document.querySelector("form");
+let watchedStore = JSON.parse(localStorage.getItem("watchedEpisodes")) || [];
 
-form.addEventListener("submit", handleForm);
+let episodes = Array.from(document.querySelectorAll("[type='checkbox']"));
 
-function handleForm(event) {
-    event.preventDefault();
+episodes.forEach((episode) => {
+  episode.addEventListener("change", updateCheckBoxes);
+});
 
-    let answers = document.querySelectorAll("input[type='radio']");
-
-    let points = 0;
-    answers.forEach((answer) => {
-        if (answer.checked) {
-            points += Number.parseInt(answer.getAttribute("data-points"))
-        }
-    })
-
-    console.log(event);
-
-    form.classList.toggle("hidden");
+function updateCheckBoxes() {
+  let watched = Array.from(
+    document.querySelectorAll("[type='checkbox']:checked")
+  );
+  let watchedEpisodes = [];
+  watched.forEach((watched) => {
+      watchedEpisodes.push(watched.getAttribute("data-episode"));
+  });
+  localStorage.setItem("watchedEpisodes", JSON.stringify(watchedEpisodes));
 }
