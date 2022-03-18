@@ -180,12 +180,12 @@ img {
   justify-content: center;
   font-size: xx-large;
   font-weight: 1000;
-  background-color: #0000e0;
+  background-color: rgb(78, 0, 0);
   transition: all 500ms;
 }
 
 .buttonback2:hover {
-  background-color: #610000;
+  background-color: #6b0000;
 }
 
 .headers {
@@ -209,7 +209,10 @@ img {
 }
 
 .season1 {
-  border: #0000e0 solid 5px;
+  border-top: rgb(78, 0, 0) solid 5px;
+  border-bottom: rgb(78, 0, 0) solid 5px;
+  border-left: rgb(78, 0, 0) solid 5px;
+  border-right: rgb(78, 0, 0) solid 2.5px;
   background-image: url(tanjiro\ water\ breathing.jpg);
   background-blend-mode: luminosity;
   background-color: white;
@@ -226,7 +229,10 @@ img {
 }
 
 .season2 {
-  border: #610000 solid 5px;
+  border-top: rgb(78, 0, 0) solid 5px;
+  border-bottom: rgb(78, 0, 0) solid 5px;
+  border-right: rgb(78, 0, 0) solid 5px;
+  border-left: rgb(78, 0, 0) solid 2.5px;
   background-image: url(https://static.displate.com/857x1200/displate/2021-07-02/24bf6789fdef8f97f9676cd106f65cf7_9da1f889744aa32e5af52c4bf4e82f9d.jpg);
   background-size: 100%;
   background-position: 10% 50%;
